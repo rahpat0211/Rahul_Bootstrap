@@ -9,33 +9,25 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     {% block head %}
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}"/>
 
-        <title>{% block title %}{% endblock %}This is {{ name }} Website</title>
+        <title>Rahul's F-Layout Page</title>
     {% endblock %}
 
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <header class="mb-5">
-            <!-- As a link -->
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/about">About</a>
-                        </li>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    </div>
+        <span class="fs-4">Rahul</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link active">About</a></li>
+      </ul>
+    </header>
     <div class="row">
 
         <div class="col-8">
@@ -80,7 +72,49 @@
             </p>
         </div>
         <div class="col">
-            Column
+
+
+
+            <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 380px;">
+
+    <div class="list-group list-group-flush border-bottom scrollarea">
+
+
+      <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1">To-Do List 1</strong>
+          <small>Mon</small>
+        </div>
+        <div class="col-10 mb-1 small"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1">To-Do List 2</strong>
+          <small class="text-muted">Tues</small>
+        </div>
+        <div class="col-10 mb-1 small"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+      </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1">To-Do List 3</strong>
+          <small class="text-muted">Wed</small>
+        </div>
+        <div class="col-10 mb-1 small"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+      </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1">To-Do List 4</strong>
+          <small class="text-muted">Thur</small>
+        </div>
+        <div class="col-10 mb-1 small"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+      </a>
+
+
+
+    </div>
+  </div>
+
+
         </div>
     </div>
 
