@@ -1,9 +1,13 @@
-# Docker Nginx Flask Project Setup
+# Bootstrap Pages
 
 Just Run:
 
 docker compose up --build to get it to run and go to locahost to see the site.
 
-## Screenshot of Running Program
+## Screenshot of index.html using Z - Layout
 
-![Running Program](screenshots/running-program.png)
+![Running Program](screenshots/Z_Layout.png)
+
+## Screenshot of about.html using F - Layout
+
+![Running Program](screenshots/F_Layout.png)
